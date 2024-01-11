@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4295589F2B4EE3AC00DDAE57 /* DropDownPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295589E2B4EE3AC00DDAE57 /* DropDownPicker.swift */; };
+		429558A12B4EE94800DDAE57 /* SelectGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429558A02B4EE94800DDAE57 /* SelectGeneration.swift */; };
+		429558A32B4EEF8300DDAE57 /* JoinCircleBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429558A22B4EEF8300DDAE57 /* JoinCircleBorderButton.swift */; };
+		429558A52B4EF62200DDAE57 /* JoinName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429558A42B4EF62200DDAE57 /* JoinName.swift */; };
+		429558A72B4EFDCB00DDAE57 /* JoinNickname.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429558A62B4EFDCB00DDAE57 /* JoinNickname.swift */; };
+		429558A92B4F017100DDAE57 /* SelectParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429558A82B4F017100DDAE57 /* SelectParts.swift */; };
+		429558AB2B4F032100DDAE57 /* JoinAgreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429558AA2B4F032100DDAE57 /* JoinAgreement.swift */; };
+		429558AD2B4F04B100DDAE57 /* JoinAgreCircleCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429558AC2B4F04B100DDAE57 /* JoinAgreCircleCheckButton.swift */; };
+		42A605CD2B4D30B80068D5E9 /* JoinNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A605CC2B4D30B80068D5E9 /* JoinNavigationButton.swift */; };
+		42A605CF2B4D31B30068D5E9 /* JoinCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A605CE2B4D31B30068D5E9 /* JoinCode.swift */; };
+		42A605D12B4D38360068D5E9 /* SelectUniv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A605D02B4D38360068D5E9 /* SelectUniv.swift */; };
+		42A605D42B4EBB720068D5E9 /* JoinTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A605D32B4EBB720068D5E9 /* JoinTextFieldStyle.swift */; };
+		42A605D62B4EBCD90068D5E9 /* JoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A605D52B4EBCD80068D5E9 /* JoinViewModel.swift */; };
 		F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */; };
 		F332F01B2B4C599000F0CDD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F01A2B4C599000F0CDD0 /* ContentView.swift */; };
 		F332F01D2B4C599100F0CDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F332F01C2B4C599100F0CDD0 /* Assets.xcassets */; };
@@ -42,6 +55,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4295589E2B4EE3AC00DDAE57 /* DropDownPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPicker.swift; sourceTree = "<group>"; };
+		429558A02B4EE94800DDAE57 /* SelectGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGeneration.swift; sourceTree = "<group>"; };
+		429558A22B4EEF8300DDAE57 /* JoinCircleBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinCircleBorderButton.swift; sourceTree = "<group>"; };
+		429558A42B4EF62200DDAE57 /* JoinName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinName.swift; sourceTree = "<group>"; };
+		429558A62B4EFDCB00DDAE57 /* JoinNickname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNickname.swift; sourceTree = "<group>"; };
+		429558A82B4F017100DDAE57 /* SelectParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectParts.swift; sourceTree = "<group>"; };
+		429558AA2B4F032100DDAE57 /* JoinAgreement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinAgreement.swift; sourceTree = "<group>"; };
+		429558AC2B4F04B100DDAE57 /* JoinAgreCircleCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinAgreCircleCheckButton.swift; sourceTree = "<group>"; };
+		42A605CC2B4D30B80068D5E9 /* JoinNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinNavigationButton.swift; sourceTree = "<group>"; };
+		42A605CE2B4D31B30068D5E9 /* JoinCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinCode.swift; sourceTree = "<group>"; };
+		42A605D02B4D38360068D5E9 /* SelectUniv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUniv.swift; sourceTree = "<group>"; };
+		42A605D32B4EBB720068D5E9 /* JoinTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinTextFieldStyle.swift; sourceTree = "<group>"; };
+		42A605D52B4EBCD80068D5E9 /* JoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewModel.swift; sourceTree = "<group>"; };
 		F332F0152B4C599000F0CDD0 /* UMC-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_iOSApp.swift; sourceTree = "<group>"; };
 		F332F01A2B4C599000F0CDD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +113,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		423DC0542B4D29D500033A7D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				42A605D22B4EA3610068D5E9 /* ViewModel */,
+				423DC0562B4D2B3400033A7D /* Helper */,
+				423DC0552B4D2B2300033A7D /* JoinView */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		423DC0552B4D2B2300033A7D /* JoinView */ = {
+			isa = PBXGroup;
+			children = (
+				42A605CE2B4D31B30068D5E9 /* JoinCode.swift */,
+				42A605D02B4D38360068D5E9 /* SelectUniv.swift */,
+				429558A02B4EE94800DDAE57 /* SelectGeneration.swift */,
+				429558A42B4EF62200DDAE57 /* JoinName.swift */,
+				429558A62B4EFDCB00DDAE57 /* JoinNickname.swift */,
+				429558A82B4F017100DDAE57 /* SelectParts.swift */,
+				429558AA2B4F032100DDAE57 /* JoinAgreement.swift */,
+			);
+			path = JoinView;
+			sourceTree = "<group>";
+		};
+		423DC0562B4D2B3400033A7D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				42A605CC2B4D30B80068D5E9 /* JoinNavigationButton.swift */,
+				42A605D32B4EBB720068D5E9 /* JoinTextFieldStyle.swift */,
+				4295589E2B4EE3AC00DDAE57 /* DropDownPicker.swift */,
+				429558A22B4EEF8300DDAE57 /* JoinCircleBorderButton.swift */,
+				429558AC2B4F04B100DDAE57 /* JoinAgreCircleCheckButton.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		42A605D22B4EA3610068D5E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				42A605D52B4EBCD80068D5E9 /* JoinViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F332F00C2B4C599000F0CDD0 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				F332F0482B4C5A1800F0CDD0 /* Utils */,
+				423DC0542B4D29D500033A7D /* Login */,
 				F332F0452B4C59E900F0CDD0 /* ContentView */,
 			);
 			path = Presentation;
@@ -401,13 +472,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				429558AD2B4F04B100DDAE57 /* JoinAgreCircleCheckButton.swift in Sources */,
+				42A605D62B4EBCD90068D5E9 /* JoinViewModel.swift in Sources */,
 				F332F05C2B4C5AC200F0CDD0 /* MemberResponseDTO.swift in Sources */,
 				F332F04D2B4C5A4000F0CDD0 /* ContentViewModel.swift in Sources */,
+				429558A32B4EEF8300DDAE57 /* JoinCircleBorderButton.swift in Sources */,
 				F332F0552B4C5A7D00F0CDD0 /* Member.swift in Sources */,
+				42A605D42B4EBB720068D5E9 /* JoinTextFieldStyle.swift in Sources */,
 				F332F01B2B4C599000F0CDD0 /* ContentView.swift in Sources */,
 				F332F0502B4C5A5800F0CDD0 /* Extension+View.swift in Sources */,
+				429558AB2B4F032100DDAE57 /* JoinAgreement.swift in Sources */,
+				42A605CD2B4D30B80068D5E9 /* JoinNavigationButton.swift in Sources */,
 				F332F05E2B4C5AD000F0CDD0 /* APiEndpoints.swift in Sources */,
 				F332F04A2B4C5A2E00F0CDD0 /* DummyUtilView.swift in Sources */,
+				4295589F2B4EE3AC00DDAE57 /* DropDownPicker.swift in Sources */,
+				429558A12B4EE94800DDAE57 /* SelectGeneration.swift in Sources */,
+				429558A52B4EF62200DDAE57 /* JoinName.swift in Sources */,
+				42A605CF2B4D31B30068D5E9 /* JoinCode.swift in Sources */,
+				429558A72B4EFDCB00DDAE57 /* JoinNickname.swift in Sources */,
+				429558A92B4F017100DDAE57 /* SelectParts.swift in Sources */,
+				42A605D12B4D38360068D5E9 /* SelectUniv.swift in Sources */,
 				F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */,
 				F332F05A2B4C5AB600F0CDD0 /* MemberRequestDTO.swift in Sources */,
 				F332F0622B4C5AF800F0CDD0 /* DummyResponseRepository.swift in Sources */,
@@ -574,13 +658,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UMC-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UF85X5VUH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,13 +689,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UMC-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UF85X5VUH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -648,6 +738,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF85X5VUH7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -683,6 +774,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF85X5VUH7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyungsoo.UMC-iOSUITests";
