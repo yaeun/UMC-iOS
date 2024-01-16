@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466DED912B56F10700934023 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DED902B56F10700934023 /* HomeView.swift */; };
+		466DED932B56F18000934023 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DED922B56F18000934023 /* HomeViewModel.swift */; };
 		F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */; };
-		F332F01B2B4C599000F0CDD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F01A2B4C599000F0CDD0 /* ContentView.swift */; };
 		F332F01D2B4C599100F0CDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F332F01C2B4C599100F0CDD0 /* Assets.xcassets */; };
 		F332F0202B4C599100F0CDD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F332F01F2B4C599100F0CDD0 /* Preview Assets.xcassets */; };
 		F332F02A2B4C599100F0CDD0 /* UMC_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0292B4C599100F0CDD0 /* UMC_iOSTests.swift */; };
 		F332F0342B4C599100F0CDD0 /* UMC_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0332B4C599100F0CDD0 /* UMC_iOSUITests.swift */; };
 		F332F0362B4C599100F0CDD0 /* UMC_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0352B4C599100F0CDD0 /* UMC_iOSUITestsLaunchTests.swift */; };
 		F332F04A2B4C5A2E00F0CDD0 /* DummyUtilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0492B4C5A2E00F0CDD0 /* DummyUtilView.swift */; };
-		F332F04D2B4C5A4000F0CDD0 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F04C2B4C5A4000F0CDD0 /* ContentViewModel.swift */; };
 		F332F0502B4C5A5800F0CDD0 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F04F2B4C5A5800F0CDD0 /* Extension+View.swift */; };
 		F332F0552B4C5A7D00F0CDD0 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0542B4C5A7D00F0CDD0 /* Member.swift */; };
 		F332F05A2B4C5AB600F0CDD0 /* MemberRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0592B4C5AB600F0CDD0 /* MemberRequestDTO.swift */; };
@@ -42,9 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		466DED902B56F10700934023 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		466DED922B56F18000934023 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F332F0152B4C599000F0CDD0 /* UMC-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_iOSApp.swift; sourceTree = "<group>"; };
-		F332F01A2B4C599000F0CDD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F332F01C2B4C599100F0CDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F332F01F2B4C599100F0CDD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F332F0252B4C599100F0CDD0 /* UMC-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMC-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +54,6 @@
 		F332F0332B4C599100F0CDD0 /* UMC_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_iOSUITests.swift; sourceTree = "<group>"; };
 		F332F0352B4C599100F0CDD0 /* UMC_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F332F0492B4C5A2E00F0CDD0 /* DummyUtilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUtilView.swift; sourceTree = "<group>"; };
-		F332F04C2B4C5A4000F0CDD0 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		F332F04F2B4C5A5800F0CDD0 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		F332F0542B4C5A7D00F0CDD0 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		F332F0592B4C5AB600F0CDD0 /* MemberRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberRequestDTO.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		F332F0462B4C59F800F0CDD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F332F01A2B4C599000F0CDD0 /* ContentView.swift */,
+				466DED902B56F10700934023 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 		F332F0472B4C59FB00F0CDD0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F332F04C2B4C5A4000F0CDD0 /* ContentViewModel.swift */,
+				466DED922B56F18000934023 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -402,9 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F332F05C2B4C5AC200F0CDD0 /* MemberResponseDTO.swift in Sources */,
-				F332F04D2B4C5A4000F0CDD0 /* ContentViewModel.swift in Sources */,
+				466DED932B56F18000934023 /* HomeViewModel.swift in Sources */,
 				F332F0552B4C5A7D00F0CDD0 /* Member.swift in Sources */,
-				F332F01B2B4C599000F0CDD0 /* ContentView.swift in Sources */,
+				466DED912B56F10700934023 /* HomeView.swift in Sources */,
 				F332F0502B4C5A5800F0CDD0 /* Extension+View.swift in Sources */,
 				F332F05E2B4C5AD000F0CDD0 /* APiEndpoints.swift in Sources */,
 				F332F04A2B4C5A2E00F0CDD0 /* DummyUtilView.swift in Sources */,
