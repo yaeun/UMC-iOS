@@ -17,6 +17,7 @@
 		46168F112B583FA80076EFD4 /* MascotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46168F102B583FA80076EFD4 /* MascotView.swift */; };
 		46168F132B5840050076EFD4 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46168F122B5840050076EFD4 /* RankView.swift */; };
 		46168F162B5843440076EFD4 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 46168F152B5843440076EFD4 /* FSCalendar */; };
+		46168F182B5844E10076EFD4 /* FSCalendarUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46168F172B5844E10076EFD4 /* FSCalendarUIKit.swift */; };
 		466DED912B56F10700934023 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DED902B56F10700934023 /* HomeView.swift */; };
 		466DED932B56F18000934023 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DED922B56F18000934023 /* HomeViewModel.swift */; };
 		F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */; };
@@ -61,6 +62,7 @@
 		46168F0E2B583F4E0076EFD4 /* GitHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubView.swift; sourceTree = "<group>"; };
 		46168F102B583FA80076EFD4 /* MascotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotView.swift; sourceTree = "<group>"; };
 		46168F122B5840050076EFD4 /* RankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
+		46168F172B5844E10076EFD4 /* FSCalendarUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendarUIKit.swift; sourceTree = "<group>"; };
 		466DED902B56F10700934023 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		466DED922B56F18000934023 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F332F0152B4C599000F0CDD0 /* UMC-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				46168F0E2B583F4E0076EFD4 /* GitHubView.swift */,
 				46168F102B583FA80076EFD4 /* MascotView.swift */,
 				46168F122B5840050076EFD4 /* RankView.swift */,
+				46168F172B5844E10076EFD4 /* FSCalendarUIKit.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F332F05C2B4C5AC200F0CDD0 /* MemberResponseDTO.swift in Sources */,
+				46168F182B5844E10076EFD4 /* FSCalendarUIKit.swift in Sources */,
 				466DED932B56F18000934023 /* HomeViewModel.swift in Sources */,
 				46168F0D2B583EF40076EFD4 /* TodayILearnedView.swift in Sources */,
 				F332F0552B4C5A7D00F0CDD0 /* Member.swift in Sources */,
