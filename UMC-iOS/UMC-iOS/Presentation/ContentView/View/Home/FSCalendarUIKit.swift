@@ -17,9 +17,10 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
         super.viewDidLoad()
         
         calendar = FSCalendar(frame: CGRect(x: 0.0,
-                                            y: 40.0,
+                                            y: 0.0,
                                             width: self.view.frame.width,
                                             height: 300.0))
+
         calendar.scrollDirection = .vertical            // 달력 넘기는 방식
         calendar.scope = .month
 
@@ -69,6 +70,7 @@ class ViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource
         return 0
     }
      */
+    
     
     // 오늘 기준 7일 뒤까지만 활성화
     /*

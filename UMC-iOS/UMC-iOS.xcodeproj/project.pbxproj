@@ -20,6 +20,8 @@
 		46168F182B5844E10076EFD4 /* FSCalendarUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46168F172B5844E10076EFD4 /* FSCalendarUIKit.swift */; };
 		466DED912B56F10700934023 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DED902B56F10700934023 /* HomeView.swift */; };
 		466DED932B56F18000934023 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466DED922B56F18000934023 /* HomeViewModel.swift */; };
+		46B7B4B92B596BA200C72346 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B7B4B82B596BA200C72346 /* DateValue.swift */; };
+		46B7B4BB2B59942200C72346 /* CalendarTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B7B4BA2B59942200C72346 /* CalendarTask.swift */; };
 		F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */; };
 		F332F01D2B4C599100F0CDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F332F01C2B4C599100F0CDD0 /* Assets.xcassets */; };
 		F332F0202B4C599100F0CDD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F332F01F2B4C599100F0CDD0 /* Preview Assets.xcassets */; };
@@ -65,6 +67,8 @@
 		46168F172B5844E10076EFD4 /* FSCalendarUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCalendarUIKit.swift; sourceTree = "<group>"; };
 		466DED902B56F10700934023 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		466DED922B56F18000934023 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		46B7B4B82B596BA200C72346 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		46B7B4BA2B59942200C72346 /* CalendarTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTask.swift; sourceTree = "<group>"; };
 		F332F0152B4C599000F0CDD0 /* UMC-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_iOSApp.swift; sourceTree = "<group>"; };
 		F332F01C2B4C599100F0CDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +129,15 @@
 				46168F172B5844E10076EFD4 /* FSCalendarUIKit.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		46AED27C2B595FA800479C0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46B7B4B82B596BA200C72346 /* DateValue.swift */,
+				46B7B4BA2B59942200C72346 /* CalendarTask.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F332F00C2B4C599000F0CDD0 = {
@@ -213,6 +226,7 @@
 		F332F0452B4C59E900F0CDD0 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
+				46AED27C2B595FA800479C0C /* Model */,
 				F332F0472B4C59FB00F0CDD0 /* ViewModel */,
 				F332F0462B4C59F800F0CDD0 /* View */,
 			);
@@ -459,11 +473,13 @@
 				F332F05E2B4C5AD000F0CDD0 /* APiEndpoints.swift in Sources */,
 				F332F04A2B4C5A2E00F0CDD0 /* DummyUtilView.swift in Sources */,
 				46168F112B583FA80076EFD4 /* MascotView.swift in Sources */,
+				46B7B4B92B596BA200C72346 /* DateValue.swift in Sources */,
 				46168F032B583CEE0076EFD4 /* HomeNavigationBarView.swift in Sources */,
 				46168F0B2B583EBD0076EFD4 /* ToDoListView.swift in Sources */,
 				46168F092B583E7B0076EFD4 /* MainCalendarView.swift in Sources */,
 				F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */,
 				46168F072B583DF50076EFD4 /* AnnouncementView.swift in Sources */,
+				46B7B4BB2B59942200C72346 /* CalendarTask.swift in Sources */,
 				F332F05A2B4C5AB600F0CDD0 /* MemberRequestDTO.swift in Sources */,
 				F332F0622B4C5AF800F0CDD0 /* DummyResponseRepository.swift in Sources */,
 				46168F0F2B583F4E0076EFD4 /* GitHubView.swift in Sources */,

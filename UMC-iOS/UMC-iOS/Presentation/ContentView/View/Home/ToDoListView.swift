@@ -58,7 +58,7 @@ struct ToDoListView: View {
                                 .padding(.leading, 18)
                             } // VStack
                         } // ZStack
-                    }
+                    } // ForEach
                 } // HStack
                 .padding(.trailing, 18)
             } // ScrollView

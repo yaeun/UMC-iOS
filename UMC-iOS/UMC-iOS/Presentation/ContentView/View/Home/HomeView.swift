@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+        // for CalendarView
+        @State var currentDate: Date = Date()
         ScrollView(showsIndicators: false) {
             ZStack {
                 Image("backgroundImage")
@@ -21,7 +23,7 @@ struct HomeView: View {
                     HomeNavigationBarView().padding(.top, 16)
                     UserInformationView().padding(.top, 8)
                     AnnouncementView().padding(.top, 8)
-                    MainCalendarView().padding(.top, 8)
+                    MainCalendarView(currentDate: $currentDate).padding(.top, 8)
                     ToDoListView().padding(.top, 24)
                     
                     HStack(spacing: 18) {
