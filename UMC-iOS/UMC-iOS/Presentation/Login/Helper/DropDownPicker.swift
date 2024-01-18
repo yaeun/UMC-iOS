@@ -83,25 +83,29 @@ struct DropDownPicker: View {
     func OptionsView() -> some View {
         VStack{
             ScrollView{
-                VStack(spacing: 0) {
-                    ForEach(options, id: \.self) { option in
-                        Text(option)
-                            .multilineTextAlignment(.center)
-                            .foregroundStyle(selection == option ? Color.black : Color.gray)
-                            .animation(.none, value: selection)
-                            .frame(height: 40)
-                            .contentShape(.rect)
-                            .padding(.horizontal, 15)
-                            .onTapGesture {
-                                withAnimation(.snappy) {
-                                    selection = option
-                                    showDropdown.toggle()
+                HStack{
+                    Spacer()
+                    VStack(spacing: 0) {
+                        ForEach(options, id: \.self) { option in
+                            Text(option)
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle(selection == option ? Color.black : Color.gray)
+                                .animation(.none, value: selection)
+                                .frame(height: 40)
+                                .contentShape(.rect)
+                                .onTapGesture {
+                                    withAnimation(.snappy) {
+                                        selection = option
+                                        showDropdown.toggle()
+                                    }
                                 }
-                            }
+                        }
                     }
+                    Spacer()
                 }
             }
             .frame(minHeight: 500)
+            
         }
         .transition(.move(edge: state == .top ? .bottom : .top))
         .zIndex(1)

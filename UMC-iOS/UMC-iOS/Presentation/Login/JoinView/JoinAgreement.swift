@@ -88,8 +88,7 @@ struct JoinAgreement:View {
                 Spacer().frame(height: 273)
                 
                 if (viewModel.isAllAgreed){
-                    JoinNavigationButton(action: {
-                    }, destination: ContentView())
+                    JoinNavigationButton(destination: ContentView())
                     }
                 
                 Spacer()

@@ -53,8 +53,7 @@ struct SelectParts:View {
                 Spacer().frame(height: 320)
                 
                 if (!viewModel.selectedParts.isEmpty){
-                    JoinNavigationButton(action: {
-                    }, destination: JoinAgreement())
+                    JoinNavigationButton(destination: JoinAgreement())
                 }
                 Spacer()
             }

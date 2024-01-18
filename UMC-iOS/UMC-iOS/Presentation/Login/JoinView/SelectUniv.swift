@@ -36,15 +36,10 @@ struct SelectUniv:View {
                 
                 // 초대코드 또는 QR 인증이 완료되면 보이는 버튼
                 if ((selectedUniv?.isEmpty) != nil) {
-                    JoinNavigationButton(action: {
-                    }, destination: SelectGeneration())                    }
+                    JoinNavigationButton(destination: SelectGeneration())                    }
                 Spacer()
             }
         }
         .ignoresSafeArea()
     }
-}
-
-#Preview {
-    SelectUniv()
 }

@@ -12,6 +12,7 @@ struct borderCustomButton: View {
     @State private var isButtonPressed = false
     
     var title: String
+    var fontSize: CGFloat = 18
     var action: () -> Void
     
     var body: some View {
@@ -19,9 +20,9 @@ struct borderCustomButton: View {
             // 버튼이 클릭되었을 때 수행할 동작
             isButtonPressed.toggle()
             action()
-            
         }) {
             Text(title)
+                .font(.system(size: fontSize))
                 .padding(.horizontal, 16)
                 .padding(.vertical, 6)
         }

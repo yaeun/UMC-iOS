@@ -28,7 +28,7 @@ struct JoinCode: View {
                         Spacer().frame(height: 16)
                         
                         TextField("", text: $viewModel.inviteCode,
-                                  prompt: Text("운영진에게 받은 코드를 입력해주세요!")
+                                  prompt: Text("초대코드를 입력해주세요!")
                             .font(.system(size:18))
                             .foregroundColor(.black.opacity(0.5)
                                             )
@@ -66,8 +66,7 @@ struct JoinCode: View {
                     
                     // 초대코드 또는 QR 인증이 완료되면 보이는 버튼
                     if viewModel.isInviteCodeValid || viewModel.isQRAuthenticated {
-                        JoinNavigationButton(action: {
-                        }, destination: SelectUniv())
+                        JoinNavigationButton(destination: SelectUniv())
                     }
                     Spacer()
                 }

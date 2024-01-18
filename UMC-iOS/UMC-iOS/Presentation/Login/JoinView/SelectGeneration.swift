@@ -33,23 +33,18 @@ struct SelectGeneration:View {
                     
                     Spacer().frame(height: 16)
                     
-                    HStack(spacing: 8){
-                        ForEach(generation.prefix((generation.count/2)), id: \.self) { title in
-                            borderCustomButton(title: title){
-                                viewModel.handleButtonSelection(title, selected: &viewModel.selectedGeneration)
+                    ForEach(0..<2, id: \.self) { row in
+                        HStack(spacing: 8) {
+                            ForEach(0..<4, id: \.self) { column in
+                                let index = row * 4 + column
+                                if index < generation.count {
+                                    let title = generation[index]
+                                    borderCustomButton(title: title) {
+                                        viewModel.handleButtonSelection(title, selected: &viewModel.selectedGeneration)
+                                    }
+                                }
                             }
                         }
-                        
-                    }
-                    
-
-                    HStack(spacing: 8){
-                        ForEach(generation.suffix((generation.count/2)), id: \.self) { title in
-                            borderCustomButton(title: title){
-                                viewModel.handleButtonSelection(title, selected: &viewModel.selectedGeneration)
-                            }
-                        }
-                        
                     }
                 }
                 .padding()
@@ -57,8 +52,7 @@ struct SelectGeneration:View {
                 Spacer().frame(height: 320)
                 
                 if (!viewModel.selectedGeneration.isEmpty){
-                    JoinNavigationButton(action: {
-                    }, destination: JoinName())
+                    JoinNavigationButton(destination: JoinName())
                     
                 }
                 

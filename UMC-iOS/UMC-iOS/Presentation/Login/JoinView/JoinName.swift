@@ -38,8 +38,7 @@ struct JoinName:View {
                 Spacer().frame(height: 373)
                 
                 if (!name.isEmpty){
-                    JoinNavigationButton(action: {
-                    }, destination: JoinNickname())
+                    JoinNavigationButton(destination: JoinNickname())
                 }
                 Spacer()
             }

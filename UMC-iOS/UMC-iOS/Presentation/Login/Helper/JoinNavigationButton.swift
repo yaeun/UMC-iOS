@@ -9,14 +9,12 @@ import SwiftUI
 
 //회원가입시 다음 페이지 넘어가는 동그라미 버튼
 struct JoinNavigationButton<Destination: View>: View {
-    var action: () -> Void
     var destination: Destination
     @State private var isClicked = false
 
     var body: some View {
         Button(action: {
-            action()
-            isClicked = true
+            isClicked.toggle()
         }) {
             HStack {
                 Spacer()
