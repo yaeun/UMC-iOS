@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4614B5FF2B5C28CA0067DCD3 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 4614B5FE2B5C28CA0067DCD3 /* PopupView */; };
 		46168F032B583CEE0076EFD4 /* HomeNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46168F022B583CEE0076EFD4 /* HomeNavigationBarView.swift */; };
 		46168F052B583DAA0076EFD4 /* UserInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46168F042B583DAA0076EFD4 /* UserInformationView.swift */; };
 		46168F072B583DF50076EFD4 /* AnnouncementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46168F062B583DF50076EFD4 /* AnnouncementView.swift */; };
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4614B5FF2B5C28CA0067DCD3 /* PopupView in Frameworks */,
 				46168F162B5843440076EFD4 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +342,7 @@
 			name = "UMC-iOS";
 			packageProductDependencies = (
 				46168F152B5843440076EFD4 /* FSCalendar */,
+				4614B5FE2B5C28CA0067DCD3 /* PopupView */,
 			);
 			productName = "UMC-iOS";
 			productReference = F332F0152B4C599000F0CDD0 /* UMC-iOS.app */;
@@ -415,6 +418,7 @@
 			mainGroup = F332F00C2B4C599000F0CDD0;
 			packageReferences = (
 				46168F142B5843440076EFD4 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				4614B5FD2B5C28CA0067DCD3 /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = F332F0162B4C599000F0CDD0 /* Products */;
 			projectDirPath = "";
@@ -804,6 +808,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4614B5FD2B5C28CA0067DCD3 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.3;
+			};
+		};
 		46168F142B5843440076EFD4 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
@@ -815,6 +827,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4614B5FE2B5C28CA0067DCD3 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4614B5FD2B5C28CA0067DCD3 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
 		46168F152B5843440076EFD4 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 46168F142B5843440076EFD4 /* XCRemoteSwiftPackageReference "FSCalendar" */;

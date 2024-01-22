@@ -6,30 +6,32 @@
 //
 
 import SwiftUI
-import UIKit
 import FSCalendar
+import PopupView
 
 struct MainCalendarView: View {
     @Binding var currentDate: Date
     @State var currentMonth: Int = 0 // 화살표 버튼 클릭시 월 업데이트
+    
+    @Binding var shouldShowPopup: Bool
    
     
     let days: [String] = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     let colums = Array(repeating: GridItem(.flexible()), count: 7)
     
     var body: some View {
-        ZStack {
+        ZStack { // 달력 배경, 달력, 팝업 ZStack
             Rectangle()
                 .foregroundColor(Color.white)
                 .cornerRadius(12)
-                .frame(height: 260)
+                .frame(height: .infinity)
                 .padding(.horizontal, 18)
                 .shadow(color: Color.gray.opacity(0.5), radius: 6, x: 0, y: 2)
             
-            VStack(spacing: 4) {
+            VStack(spacing: 4) { // 달력 전체
                 HStack(spacing: 10) { // 월, 버튼
                     VStack(alignment: .leading, spacing: 0) {
-                        Text(extraDate()[0])
+                        Text(extraDate()[0]) // January .. Febuary ...
                             .font(.system(size: 16))
                             .fontWeight(.bold)
                             .foregroundStyle(Color.main2)
@@ -39,7 +41,7 @@ struct MainCalendarView: View {
                     
                     Button { // 왼쪽 버튼, 이전 달
                         print("CalendarLeftBtn Tapped")
-                        print("\(extraDate()[1])")
+                        
                         withAnimation {
                             currentMonth -= 1
                         }
@@ -65,8 +67,8 @@ struct MainCalendarView: View {
                     } // Button
                     
                 } // HStack
-                .padding(.horizontal, 16)
-                .padding(.bottom, 4)
+                .padding(.horizontal, 16) // 월 좌우 패딩
+                .padding(.bottom, 4) // 월 하단 패딩
                 
                 // Day View 주
                 HStack(spacing: 0) {
@@ -78,42 +80,117 @@ struct MainCalendarView: View {
                             .frame(maxWidth: .infinity)
                     } // ForEach
                 } // HStack
-                .padding(.horizontal, 5)
-                .padding(.bottom, 10)
+                .padding(.horizontal, 5) // 주 좌우 패딩
+                .padding(.bottom, 10) // 주 하단 패딩
                 
-                // 일 31개
-                LazyVGrid(columns: colums, spacing: 12) {
+                // 일 31
+                LazyVGrid(columns: colums, spacing: 0) {
                     ForEach(extractDate()) { value in
                         
                         CardView(value: value)
+                            .background(
+                                Capsule() // 타원
+                                    .fill(Color.main2)
+                                    .padding(.top, -4)
+                                    .padding(.bottom, 6)
+                                    .padding(.horizontal, 10)
+                                    .opacity(isSameDay(date1: value.date, date2: currentDate) ? 1 : 0)
+                                    //.opacity((currentMonth == 0) ? 1 : 0)
+                            )
+                            .onTapGesture {
+                                currentDate = value.date
+                                print("날짜 정보 : \(currentDate.formatted())")
+                                
+                                // 일정이 있는 경우에 shouldShowPopup = true 없다면 false
+                                if let task = tasks.first(where: { task in
+                                    return isSameDay(date1: task.taskDate, date2: currentDate)
+                                }) {
+                                    self.shouldShowPopup = true
+                                } else {
+                                    self.shouldShowPopup = false
+                                }
+                                // self.shouldShowPopup = isSameDay(date1: value.taskDate, date2: currentDate) ? true : false
+
+                            }
                     }
-                }
-                .padding(.horizontal, 9)
+                } // LazyVGrid
+                .padding(.horizontal, 9) // 일 좌우 패딩
                 
                 Spacer()
             } // VStack
-            .padding(.horizontal, 20)
-            .padding(.top, 18)
+            .padding(.horizontal, 20) // 달력 전체 패딩
+            .padding(.top, 22) // 달력 전체 패딩
+            
+            // 날짜 눌렀을 때 일정 있으면 팝업, 없으면 반응X
+            
+            if let task = tasks.first(where: { task in
+                return isSameDay(date1: task.taskDate, date2: currentDate)
+            }) {
+                ForEach(task.task) { task in
+                    VStack(spacing: 5) {
+                        // 일정 임시 출력 ...
+                        Text(currentDate.formatted())
+                        Text(task.title)
+                        Text(task.mainText)
+                        Text("from.회장 \(task.writer)")
+                    } // VStack
+                }
+            } else {
+                
+            }
             
         } // ZStack
         // 달 업데이트
         .onChange(of: currentMonth) {
             currentDate = getCurrentMonth()
+            
         }
     }
     
     // 일 31개 ViewBuilder
-    @ViewBuilder func CardView(value: DateValue) -> some View {
-        VStack {
+    @ViewBuilder
+    func CardView(value: DateValue) -> some View {
+        VStack(spacing: 0) {
             if value.day != -1 {
-                Text("\(value.day)")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Color.calendar)
-                    .fontWeight(.regular)
+                
+                if let task = tasks.first(where: { task in
+                    
+                    return isSameDay(date1: task.taskDate,
+                                     date2: value.date)
+                }) { // Task 존재할 때
+                    Text("\(value.day)")
+                        .font(.system(size: 12))
+                        .foregroundColor(isSameDay(date1: value.date, date2: currentDate) ? Color.white : Color.calendar)
+                        .frame(maxWidth: .infinity)
+                        .fontWeight(.regular)
+                    
+                    
+                    Circle() // 할일 학교 지부마다 색 다르게 구현필요
+                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? Color.white: Color.main2)
+                        .frame(width: 6, height: 6)
+                        .padding(.top, 4)
+                        
+                    
+                } else { // Task 없을 때
+                    Text("\(value.day)")
+                        .font(.system(size: 12))
+                        .foregroundColor(isSameDay(date1: value.date, date2: currentDate) ? Color.white : Color.calendar)
+                        .frame(maxWidth: .infinity)
+                        .fontWeight(.regular)
+                    
+                }
             }
         } // VStack
-        .frame(height: 18, alignment: .top)
+        .frame(height: 38, alignment: .top) // 일 한개당 높이 38
+        
     }
+    // 날짜 확인
+    func isSameDay(date1: Date, date2: Date) -> Bool {
+        let calendar = Calendar.current
+        
+        return calendar.isDate(date1, inSameDayAs: date2)
+    }
+    
     
     // 화면에 나타내기 위해 년도와 월 추가
     func extraDate() -> [String] {
@@ -121,6 +198,7 @@ struct MainCalendarView: View {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM YYYY"  // 년도와 월
         
+        // let date = formatter.string(from: currentDate)
         let date = formatter.string(from: getCurrentMonth())
         
         return date.components(separatedBy: " ") // extraDate[0] == 년도, [1] == 월
@@ -130,9 +208,7 @@ struct MainCalendarView: View {
         let calendar = Calendar.current
         
         // 현재 월, 날 가져오기
-        guard let currentMonth = calendar.date(byAdding: .month,
-                                               value: self.currentMonth,
-                                               to: Date()) else {
+        guard let currentMonth = calendar.date(byAdding: .month, value: self.currentMonth, to: Date()) else {
             return Date()
         }
         
@@ -183,110 +259,6 @@ extension Date {
     }
 }
 
-
-/*
-// Model 아직 나누지 않음
-// 날짜 칸 표시를 위한 일자 정보
-struct DateValue: Identifiable {
-    var id = UUID().uuidString
-    var day: Int
-    var date: Date
-    var isNotCurrentMonth: Bool
-}
-
-// 일정 정보
-struct Schedule: Decodable {
-    var name: String
-    var startDate: Date
-    var endDate: Date
-    
-    // 일정 표시 색 지정 (랜덤으로 지정)
-    var color = Color(red: Double.random(in: 0.0...1.0),
-                      green: Double.random(in: 0.0...1.0),
-                      blue: Double.random(in: 0.0...1.0))
-    
-    enum CodingKeys: String, CodingKey {
-        case name, startDate, endDate
-    }
-}
-
-extension Date {
-    // 년도
-    public var year: Int {
-        return Calendar.current.component(.year, from: self)
-    }
-    
-    // 월
-    public var month: Int {
-        return Calendar.current.component(.month, from: self)
-    }
-    
-    // 일
-    public var day: Int {
-        return Calendar.current.component(.day, from: self)
-    }
-    
-    // 요일
-    public var weekday: Int {
-        return Calendar.current.component(.weekday, from: self)
-    }
-    
-    // 이 날짜가 포함된 월의 모든 일자의 Date
-    func getAllDates() -> [Date] {
-        let calendar = Calendar.current
-        
-        // 시작 날짜 받아오기
-        let startDate = calendar.date(from: calendar.dateComponents([.year, .month], from: self))!
-        
-        let range = calendar.range(of: .day, in:.month, for: startDate)!
-        
-        return range.compactMap { day -> Date in
-            return calendar.date(byAdding: .day, value: day - 1, to: startDate)!
-        }
-    }
-    
-    // 이 날짜가 포함된 월의 마지막 일
-    func getLastDayInMonth() -> Int {
-        let calendar = Calendar.current
-        
-        return (calendar.range(of: .day, in: .month, for: self)?.endIndex ?? 0) - 1
-    }
-    
-    // 이 날짜가 포함된 월의 첫 일
-    func getFirstDayInMonth() -> Int {
-        let calendar = Calendar.current
-        
-        return (calendar.range(of: .day, in: .month, for: self)?.startIndex ?? 0)
-    }
-    
-    // 시간 값을 제외한 Date 리턴
-    func withOutTime() -> Date {
-        let dateComponents = DateComponents(year: self.year, month: self.month, day: self.day)
-        
-        return Calendar.current.date(from: dateComponents) ?? self
-    }
-}
-
-extension Color {
-    // 배경색에 따라 텍스트 색을 검을색 또는 흰색으로 설정
-    var textColor: Color {
-        let uiColor = UIColor(self)
-        
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        var alpha: CGFloat = 0
-        uiColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        
-        // 0 to 1 scale이므로 255 곱하기
-        let value = ( (red*255*299) + (green*255*587) + (blue*255*114) ) / 1000
-        
-        return value >= 125 ? .black : .white
-    }
-}
- 
- */
- 
 #Preview {
     HomeView()
 }
