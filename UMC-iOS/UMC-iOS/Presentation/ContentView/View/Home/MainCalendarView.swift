@@ -109,7 +109,6 @@ struct MainCalendarView: View {
                                 } else {
                                     self.shouldShowPopup = false
                                 }
-                                // self.shouldShowPopup = isSameDay(date1: value.taskDate, date2: currentDate) ? true : false
 
                             }
                     }
@@ -117,27 +116,10 @@ struct MainCalendarView: View {
                 .padding(.horizontal, 9) // 일 좌우 패딩
                 
                 Spacer()
+                
             } // VStack
             .padding(.horizontal, 20) // 달력 전체 패딩
             .padding(.top, 22) // 달력 전체 패딩
-            
-            // 날짜 눌렀을 때 일정 있으면 팝업, 없으면 반응X
-            
-            if let task = tasks.first(where: { task in
-                return isSameDay(date1: task.taskDate, date2: currentDate)
-            }) {
-                ForEach(task.task) { task in
-                    VStack(spacing: 5) {
-                        // 일정 임시 출력 ...
-                        Text(currentDate.formatted())
-                        Text(task.title)
-                        Text(task.mainText)
-                        Text("from.회장 \(task.writer)")
-                    } // VStack
-                }
-            } else {
-                
-            }
             
         } // ZStack
         // 달 업데이트

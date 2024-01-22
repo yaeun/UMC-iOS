@@ -14,8 +14,28 @@ struct HomeView: View {
     @State var shouldShowPopup: Bool = false// 팝업 뷰 State변수
     
     func createPopup() -> some View { // 팝업 뷰 만드는 함수
+        var popupDate: String = ""
+        var popupTitle: String = ""
+        var popupMainText: String = ""
+        var popupWriter: String = ""
         
-        ZStack {
+        if let task = tasks.first(where: { taskIndex in
+            return isSameDay(date1: taskIndex.taskDate, date2: currentDate)
+        }) {
+            for index in task.task {
+                popupDate = currentDate.formatted()
+                popupTitle = index.title
+                popupMainText = index.mainText
+                popupWriter = "from.회장 \(index.writer)"
+            }
+        } else {
+            popupDate = ""
+            popupTitle = ""
+            popupMainText = ""
+            popupWriter = ""
+        }
+        
+        return ZStack {
             Rectangle()
                 .cornerRadius(14.0)
                 .frame(width: .infinity, height: 208)
@@ -24,24 +44,24 @@ struct HomeView: View {
             
             VStack(spacing: 0) {
 
-                Text("12/11 (수)")
+                Text("\(popupDate)")
                     .font(.system(size: 18))
                     .fontWeight(.bold)
                     .foregroundColor(Color.main2)
                 
-                Text("[연합] 데모데이 신청 마감")
+                Text(popupTitle)
                     .font(.system(size: 16))
                     .fontWeight(.medium)
                     .foregroundColor(Color.main2)
                     .padding(.top, 6)
                 
-                Text("데모데이 신청 마감일입니다.\n잊지말고 신청해주세요~🥳")
+                Text(popupMainText)
                     .font(.system(size: 14))
                     .fontWeight(.regular)
                     .foregroundColor(.black)
                     .padding(.top, 16)
                 
-                Text("from.회장 우디")
+                Text(popupWriter)
                     .font(.system(size: 12))
                     .fontWeight(.light)
                     .foregroundColor(Color.tdlGray)
@@ -118,6 +138,14 @@ struct HomeView: View {
 
     }
 }
+
+
+func isSameDay(date1: Date, date2: Date) -> Bool {
+    let calendar = Calendar.current
+    
+    return calendar.isDate(date1, inSameDayAs: date2)
+}
+
 
 #Preview {
     HomeView()
