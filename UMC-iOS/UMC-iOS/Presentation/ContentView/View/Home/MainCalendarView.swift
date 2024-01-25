@@ -13,7 +13,7 @@ struct MainCalendarView: View {
     @Binding var currentDate: Date
     @State var currentMonth: Int = 0 // 화살표 버튼 클릭시 월 업데이트
     
-    @Binding var shouldShowPopup: Bool
+    @Binding var shouldShowCalendarPopup: Bool
    
     
     let days: [String] = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
@@ -105,9 +105,9 @@ struct MainCalendarView: View {
                                 if let task = tasks.first(where: { task in
                                     return isSameDay(date1: task.taskDate, date2: currentDate)
                                 }) {
-                                    self.shouldShowPopup = true
+                                    self.shouldShowCalendarPopup = true
                                 } else {
-                                    self.shouldShowPopup = false
+                                    self.shouldShowCalendarPopup = false
                                 }
 
                             }
@@ -120,6 +120,9 @@ struct MainCalendarView: View {
             } // VStack
             .padding(.horizontal, 20) // 달력 전체 패딩
             .padding(.top, 22) // 달력 전체 패딩
+            .onTapGesture {
+                print("Tapped")
+            }
             
         } // ZStack
         // 달 업데이트
@@ -174,7 +177,7 @@ struct MainCalendarView: View {
     }
     
     
-    // 화면에 나타내기 위해 년도와 월 추가
+    // 달력에 년도, 월 나타내기
     func extraDate() -> [String] {
         
         let formatter = DateFormatter()

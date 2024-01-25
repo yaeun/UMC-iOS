@@ -11,7 +11,7 @@ struct HomeView: View {
     // for CalendarView
     @State var currentDate: Date = Date()
     
-    @State var shouldShowPopup: Bool = false// 팝업 뷰 State변수
+    @State var shouldShowCalendarPopup: Bool = false// 팝업 뷰 State변수
     
     func createPopup() -> some View { // 팝업 뷰 만드는 함수
         var popupDate: String = ""
@@ -23,7 +23,7 @@ struct HomeView: View {
             return isSameDay(date1: taskIndex.taskDate, date2: currentDate)
         }) {
             for index in task.task {
-                popupDate = currentDate.formatted()
+                popupDate = formattedDateString(date: currentDate)
                 popupTitle = index.title
                 popupMainText = index.mainText
                 popupWriter = "from.회장 \(index.writer)"
@@ -43,7 +43,7 @@ struct HomeView: View {
                 .foregroundColor(.white)
             
             VStack(spacing: 0) {
-
+                
                 Text("\(popupDate)")
                     .font(.system(size: 18))
                     .fontWeight(.bold)
@@ -68,7 +68,7 @@ struct HomeView: View {
                     .padding(.top, 8)
                 
                 Button {
-                    self.shouldShowPopup = false
+                    self.shouldShowCalendarPopup = false
                 } label : {
                     Text("닫기")
                         .font(.system(size: 12))
@@ -82,6 +82,12 @@ struct HomeView: View {
         } // ZStack
         .multilineTextAlignment(.center)
         .padding(.top, 288)
+    }
+    
+    func formattedDateString(date: Date) -> String {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MM/dd"
+            return dateFormatter.string(from: date)
     }
     
     var body: some View {
@@ -98,7 +104,7 @@ struct HomeView: View {
                         HomeNavigationBarView().padding(.top, 16)
                         UserInformationView().padding(.top, 8)
                         AnnouncementView().padding(.top, 8)
-                        MainCalendarView(currentDate: self.$currentDate, shouldShowPopup: $shouldShowPopup).padding(.top, 8)
+                        MainCalendarView(currentDate: self.$currentDate, shouldShowCalendarPopup: $shouldShowCalendarPopup).padding(.top, 8)
                         ToDoListView().padding(.top, 24)
                         
                         HStack(spacing: 18) {
@@ -122,11 +128,11 @@ struct HomeView: View {
             
             Rectangle() // 팝업 뷰 뒤에 회색 배경
                 .foregroundColor(.black)
-                .opacity(shouldShowPopup ? 0.6 : 0)
+                .opacity(shouldShowCalendarPopup ? 0.6 : 0)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
         } // ZStack (최 상단에 팝업 뷰 배치)
-        .popup(isPresented: $shouldShowPopup, view: {self.createPopup()},
+        .popup(isPresented: $shouldShowCalendarPopup, view: {self.createPopup()},
                customize: {
             $0
                 .type(.default)
