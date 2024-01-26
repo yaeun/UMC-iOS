@@ -6,16 +6,6 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		44237A042B6104E70023728D /* UserProfileUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44237A032B6104E70023728D /* UserProfileUI.swift */; };
-		44237A062B6104F80023728D /* AbleStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44237A052B6104F80023728D /* AbleStack.swift */; };
-		44237A082B6105750023728D /* UserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44237A072B6105750023728D /* UserMessage.swift */; };
-		44237A0A2B6105800023728D /* UMCseason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44237A092B6105800023728D /* UMCseason.swift */; };
-		44237A0C2B6105900023728D /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44237A0B2B6105900023728D /* UserProfile.swift */; };
-		44237A0E2B6105A10023728D /* SocialButtonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44237A0D2B6105A10023728D /* SocialButtonSet.swift */; };
-		44237A132B6178510023728D /* UserProfileEditImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44237A122B6178510023728D /* UserProfileEditImage.swift */; };
-		44237A152B6178640023728D /* UserProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44237A142B6178640023728D /* UserProfileEdit.swift */; };
-		44237A172B6178820023728D /* UserProfileEditList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44237A162B6178820023728D /* UserProfileEditList.swift */; };
 		F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */; };
 		F332F01B2B4C599000F0CDD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F01A2B4C599000F0CDD0 /* ContentView.swift */; };
 		F332F01D2B4C599100F0CDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F332F01C2B4C599100F0CDD0 /* Assets.xcassets */; };
@@ -51,16 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44237A032B6104E70023728D /* UserProfileUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileUI.swift; path = "../../../../../../../.Trash/UMC-iOS/UMC-iOS/UMC-iOS/Presentation/ContentView/View/UserProfileUI.swift"; sourceTree = "<group>"; };
-		44237A052B6104F80023728D /* AbleStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AbleStack.swift; path = ../../../../../../../AbleStack.swift; sourceTree = "<group>"; };
-		44237A072B6105750023728D /* UserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserMessage.swift; path = ../../../../../../../UserMessage.swift; sourceTree = "<group>"; };
-		44237A092B6105800023728D /* UMCseason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UMCseason.swift; path = ../../../../../../../UMCseason.swift; sourceTree = "<group>"; };
-		44237A0B2B6105900023728D /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfile.swift; path = ../../../../../../../UserProfile.swift; sourceTree = "<group>"; };
-		44237A0D2B6105A10023728D /* SocialButtonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SocialButtonSet.swift; path = ../../../../../../../SocialButtonSet.swift; sourceTree = "<group>"; };
-		44237A112B6178300023728D /* SocialButtonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButtonSet.swift; sourceTree = "<group>"; };
-		44237A122B6178510023728D /* UserProfileEditImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileEditImage.swift; path = ../../../../../../../UserProfileEditImage.swift; sourceTree = "<group>"; };
-		44237A142B6178640023728D /* UserProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileEdit.swift; path = ../../../../../../../UserProfileEdit.swift; sourceTree = "<group>"; };
-		44237A162B6178820023728D /* UserProfileEditList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileEditList.swift; path = ../../../../../../../UserProfileEditList.swift; sourceTree = "<group>"; };
+
 		F332F0152B4C599000F0CDD0 /* UMC-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_iOSApp.swift; sourceTree = "<group>"; };
 		F332F01A2B4C599000F0CDD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,28 +87,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		44237A022B61048B0023728D /* UserProfileUI */ = {
-			isa = PBXGroup;
-			children = (
-				44237A032B6104E70023728D /* UserProfileUI.swift */,
-				44237A052B6104F80023728D /* AbleStack.swift */,
-				44237A072B6105750023728D /* UserMessage.swift */,
-				44237A092B6105800023728D /* UMCseason.swift */,
-				44237A0B2B6105900023728D /* UserProfile.swift */,
-				44237A0D2B6105A10023728D /* SocialButtonSet.swift */,
-			);
-			path = UserProfileUI;
-			sourceTree = "<group>";
-		};
-		44237A102B6175750023728D /* UserProfileEditUI */ = {
-			isa = PBXGroup;
-			children = (
-				44237A112B6178300023728D /* SocialButtonSet.swift */,
-				44237A122B6178510023728D /* UserProfileEditImage.swift */,
-				44237A142B6178640023728D /* UserProfileEdit.swift */,
-				44237A162B6178820023728D /* UserProfileEditList.swift */,
-			);
-			path = UserProfileEditUI;
+
 			sourceTree = "<group>";
 		};
 		F332F00C2B4C599000F0CDD0 = {
@@ -208,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				F332F0482B4C5A1800F0CDD0 /* Utils */,
+				423DC0542B4D29D500033A7D /* Login */,
 				F332F0452B4C59E900F0CDD0 /* ContentView */,
 			);
 			path = Presentation;
@@ -446,21 +407,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44237A062B6104F80023728D /* AbleStack.swift in Sources */,
-				F332F05C2B4C5AC200F0CDD0 /* MemberResponseDTO.swift in Sources */,
-				44237A0C2B6105900023728D /* UserProfile.swift in Sources */,
-				44237A0E2B6105A10023728D /* SocialButtonSet.swift in Sources */,
-				F332F04D2B4C5A4000F0CDD0 /* ContentViewModel.swift in Sources */,
-				F332F0552B4C5A7D00F0CDD0 /* Member.swift in Sources */,
-				44237A0A2B6105800023728D /* UMCseason.swift in Sources */,
-				44237A082B6105750023728D /* UserMessage.swift in Sources */,
-				F332F01B2B4C599000F0CDD0 /* ContentView.swift in Sources */,
-				F332F0502B4C5A5800F0CDD0 /* Extension+View.swift in Sources */,
-				44237A152B6178640023728D /* UserProfileEdit.swift in Sources */,
+
 				F332F05E2B4C5AD000F0CDD0 /* APiEndpoints.swift in Sources */,
 				44237A042B6104E70023728D /* UserProfileUI.swift in Sources */,
 				44237A132B6178510023728D /* UserProfileEditImage.swift in Sources */,
 				F332F04A2B4C5A2E00F0CDD0 /* DummyUtilView.swift in Sources */,
+				4295589F2B4EE3AC00DDAE57 /* DropDownPicker.swift in Sources */,
+				429558A12B4EE94800DDAE57 /* SelectGeneration.swift in Sources */,
+				429558A52B4EF62200DDAE57 /* JoinName.swift in Sources */,
+				42A605CF2B4D31B30068D5E9 /* JoinCode.swift in Sources */,
+				429558A72B4EFDCB00DDAE57 /* JoinNickname.swift in Sources */,
+				429558A92B4F017100DDAE57 /* SelectParts.swift in Sources */,
+				42A605D12B4D38360068D5E9 /* SelectUniv.swift in Sources */,
 				F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */,
 				44237A172B6178820023728D /* UserProfileEditList.swift in Sources */,
 				F332F05A2B4C5AB600F0CDD0 /* MemberRequestDTO.swift in Sources */,
@@ -628,13 +586,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UMC-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UF85X5VUH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,13 +617,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UMC-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UF85X5VUH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -702,6 +666,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF85X5VUH7;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -737,6 +702,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UF85X5VUH7;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyungsoo.UMC-iOSUITests";
