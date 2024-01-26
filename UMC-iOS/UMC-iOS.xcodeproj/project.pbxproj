@@ -6,15 +6,14 @@
 	objectVersion = 56;
 	objects = {
 
+
 		F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */; };
-		F332F01B2B4C599000F0CDD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F01A2B4C599000F0CDD0 /* ContentView.swift */; };
 		F332F01D2B4C599100F0CDD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F332F01C2B4C599100F0CDD0 /* Assets.xcassets */; };
 		F332F0202B4C599100F0CDD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F332F01F2B4C599100F0CDD0 /* Preview Assets.xcassets */; };
 		F332F02A2B4C599100F0CDD0 /* UMC_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0292B4C599100F0CDD0 /* UMC_iOSTests.swift */; };
 		F332F0342B4C599100F0CDD0 /* UMC_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0332B4C599100F0CDD0 /* UMC_iOSUITests.swift */; };
 		F332F0362B4C599100F0CDD0 /* UMC_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0352B4C599100F0CDD0 /* UMC_iOSUITestsLaunchTests.swift */; };
 		F332F04A2B4C5A2E00F0CDD0 /* DummyUtilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0492B4C5A2E00F0CDD0 /* DummyUtilView.swift */; };
-		F332F04D2B4C5A4000F0CDD0 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F04C2B4C5A4000F0CDD0 /* ContentViewModel.swift */; };
 		F332F0502B4C5A5800F0CDD0 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F04F2B4C5A5800F0CDD0 /* Extension+View.swift */; };
 		F332F0552B4C5A7D00F0CDD0 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0542B4C5A7D00F0CDD0 /* Member.swift */; };
 		F332F05A2B4C5AB600F0CDD0 /* MemberRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332F0592B4C5AB600F0CDD0 /* MemberRequestDTO.swift */; };
@@ -44,7 +43,6 @@
 
 		F332F0152B4C599000F0CDD0 /* UMC-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMC-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F332F0182B4C599000F0CDD0 /* UMC_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_iOSApp.swift; sourceTree = "<group>"; };
-		F332F01A2B4C599000F0CDD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F332F01C2B4C599100F0CDD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F332F01F2B4C599100F0CDD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F332F0252B4C599100F0CDD0 /* UMC-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMC-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +51,6 @@
 		F332F0332B4C599100F0CDD0 /* UMC_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_iOSUITests.swift; sourceTree = "<group>"; };
 		F332F0352B4C599100F0CDD0 /* UMC_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMC_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F332F0492B4C5A2E00F0CDD0 /* DummyUtilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUtilView.swift; sourceTree = "<group>"; };
-		F332F04C2B4C5A4000F0CDD0 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		F332F04F2B4C5A5800F0CDD0 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		F332F0542B4C5A7D00F0CDD0 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		F332F0592B4C5AB600F0CDD0 /* MemberRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberRequestDTO.swift; sourceTree = "<group>"; };
@@ -67,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4614B5FF2B5C28CA0067DCD3 /* PopupView in Frameworks */,
+				46168F162B5843440076EFD4 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +86,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-
+<
 			sourceTree = "<group>";
 		};
 		F332F00C2B4C599000F0CDD0 = {
@@ -177,6 +176,7 @@
 		F332F0452B4C59E900F0CDD0 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
+				46AED27C2B595FA800479C0C /* Model */,
 				F332F0472B4C59FB00F0CDD0 /* ViewModel */,
 				F332F0462B4C59F800F0CDD0 /* View */,
 			);
@@ -186,9 +186,7 @@
 		F332F0462B4C59F800F0CDD0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				44237A102B6175750023728D /* UserProfileEditUI */,
-				44237A022B61048B0023728D /* UserProfileUI */,
-				F332F01A2B4C599000F0CDD0 /* ContentView.swift */,
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,7 +194,7 @@
 		F332F0472B4C59FB00F0CDD0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F332F04C2B4C5A4000F0CDD0 /* ContentViewModel.swift */,
+				466DED922B56F18000934023 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -293,6 +291,10 @@
 			dependencies = (
 			);
 			name = "UMC-iOS";
+			packageProductDependencies = (
+				46168F152B5843440076EFD4 /* FSCalendar */,
+				4614B5FE2B5C28CA0067DCD3 /* PopupView */,
+			);
 			productName = "UMC-iOS";
 			productReference = F332F0152B4C599000F0CDD0 /* UMC-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -365,6 +367,10 @@
 				Base,
 			);
 			mainGroup = F332F00C2B4C599000F0CDD0;
+			packageReferences = (
+				46168F142B5843440076EFD4 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				4614B5FD2B5C28CA0067DCD3 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = F332F0162B4C599000F0CDD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -412,17 +418,10 @@
 				44237A042B6104E70023728D /* UserProfileUI.swift in Sources */,
 				44237A132B6178510023728D /* UserProfileEditImage.swift in Sources */,
 				F332F04A2B4C5A2E00F0CDD0 /* DummyUtilView.swift in Sources */,
-				4295589F2B4EE3AC00DDAE57 /* DropDownPicker.swift in Sources */,
-				429558A12B4EE94800DDAE57 /* SelectGeneration.swift in Sources */,
-				429558A52B4EF62200DDAE57 /* JoinName.swift in Sources */,
-				42A605CF2B4D31B30068D5E9 /* JoinCode.swift in Sources */,
-				429558A72B4EFDCB00DDAE57 /* JoinNickname.swift in Sources */,
-				429558A92B4F017100DDAE57 /* SelectParts.swift in Sources */,
-				42A605D12B4D38360068D5E9 /* SelectUniv.swift in Sources */,
-				F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */,
-				44237A172B6178820023728D /* UserProfileEditList.swift in Sources */,
+
 				F332F05A2B4C5AB600F0CDD0 /* MemberRequestDTO.swift in Sources */,
 				F332F0622B4C5AF800F0CDD0 /* DummyResponseRepository.swift in Sources */,
+				46168F0F2B583F4E0076EFD4 /* GitHubView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +753,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4614B5FD2B5C28CA0067DCD3 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.3;
+			};
+		};
+		46168F142B5843440076EFD4 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4614B5FE2B5C28CA0067DCD3 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4614B5FD2B5C28CA0067DCD3 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+		46168F152B5843440076EFD4 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46168F142B5843440076EFD4 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F332F00D2B4C599000F0CDD0 /* Project object */;
 }
