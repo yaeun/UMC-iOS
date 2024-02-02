@@ -40,6 +40,21 @@
 		F3CE1AC82B6D0D7000463130 /* JoinNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1ABA2B6D0D7000463130 /* JoinNavigationButton.swift */; };
 		F3CE1AC92B6D0D7000463130 /* JoinCircleBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1ABB2B6D0D7000463130 /* JoinCircleBorderButton.swift */; };
 		F3CE1ACA2B6D0D7000463130 /* JoinTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1ABC2B6D0D7000463130 /* JoinTextFieldStyle.swift */; };
+		F3CE1B432B6D17D000463130 /* MainCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B392B6D17D000463130 /* MainCalendarView.swift */; };
+		F3CE1B442B6D17D000463130 /* AnnouncementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B3A2B6D17D000463130 /* AnnouncementView.swift */; };
+		F3CE1B452B6D17D000463130 /* UserInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B3B2B6D17D000463130 /* UserInformationView.swift */; };
+		F3CE1B462B6D17D000463130 /* GitHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B3C2B6D17D000463130 /* GitHubView.swift */; };
+		F3CE1B472B6D17D000463130 /* TodayILearnedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B3D2B6D17D000463130 /* TodayILearnedView.swift */; };
+		F3CE1B482B6D17D000463130 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B3E2B6D17D000463130 /* HomeView.swift */; };
+		F3CE1B492B6D17D000463130 /* MascotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B3F2B6D17D000463130 /* MascotView.swift */; };
+		F3CE1B4A2B6D17D000463130 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B402B6D17D000463130 /* ToDoListView.swift */; };
+		F3CE1B4B2B6D17D000463130 /* HomeNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B412B6D17D000463130 /* HomeNavigationBarView.swift */; };
+		F3CE1B4C2B6D17D000463130 /* RankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B422B6D17D000463130 /* RankView.swift */; };
+		F3CE1B4F2B6D185900463130 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B4E2B6D185900463130 /* HomeViewModel.swift */; };
+		F3CE1B532B6D189000463130 /* AnnouncementInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B502B6D189000463130 /* AnnouncementInfo.swift */; };
+		F3CE1B542B6D189000463130 /* CalendarTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B512B6D189000463130 /* CalendarTask.swift */; };
+		F3CE1B552B6D189000463130 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B522B6D189000463130 /* DateValue.swift */; };
+		F3CE1B582B6D1B1A00463130 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = F3CE1B572B6D1B1A00463130 /* PopupView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +111,20 @@
 		F3CE1ABA2B6D0D7000463130 /* JoinNavigationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinNavigationButton.swift; sourceTree = "<group>"; };
 		F3CE1ABB2B6D0D7000463130 /* JoinCircleBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinCircleBorderButton.swift; sourceTree = "<group>"; };
 		F3CE1ABC2B6D0D7000463130 /* JoinTextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinTextFieldStyle.swift; sourceTree = "<group>"; };
+		F3CE1B392B6D17D000463130 /* MainCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCalendarView.swift; sourceTree = "<group>"; };
+		F3CE1B3A2B6D17D000463130 /* AnnouncementView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementView.swift; sourceTree = "<group>"; };
+		F3CE1B3B2B6D17D000463130 /* UserInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformationView.swift; sourceTree = "<group>"; };
+		F3CE1B3C2B6D17D000463130 /* GitHubView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubView.swift; sourceTree = "<group>"; };
+		F3CE1B3D2B6D17D000463130 /* TodayILearnedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayILearnedView.swift; sourceTree = "<group>"; };
+		F3CE1B3E2B6D17D000463130 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F3CE1B3F2B6D17D000463130 /* MascotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MascotView.swift; sourceTree = "<group>"; };
+		F3CE1B402B6D17D000463130 /* ToDoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		F3CE1B412B6D17D000463130 /* HomeNavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigationBarView.swift; sourceTree = "<group>"; };
+		F3CE1B422B6D17D000463130 /* RankView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankView.swift; sourceTree = "<group>"; };
+		F3CE1B4E2B6D185900463130 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F3CE1B502B6D189000463130 /* AnnouncementInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementInfo.swift; sourceTree = "<group>"; };
+		F3CE1B512B6D189000463130 /* CalendarTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTask.swift; sourceTree = "<group>"; };
+		F3CE1B522B6D189000463130 /* DateValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CE1B582B6D1B1A00463130 /* PopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +230,7 @@
 		F332F0442B4C59E000F0CDD0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F3CE1B372B6D17BD00463130 /* Home */,
 				F3CE1AA72B6D0D4E00463130 /* Login */,
 				F3CE1A7B2B6CF0BD00463130 /* UserProfileView */,
 				F3CE1A762B6CEF4D00463130 /* UserProfileEditView */,
@@ -262,6 +293,9 @@
 		F332F0522B4C5A7000F0CDD0 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				F3CE1B502B6D189000463130 /* AnnouncementInfo.swift */,
+				F3CE1B512B6D189000463130 /* CalendarTask.swift */,
+				F3CE1B522B6D189000463130 /* DateValue.swift */,
 				F332F0542B4C5A7D00F0CDD0 /* Member.swift */,
 			);
 			path = Entities;
@@ -405,6 +439,40 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		F3CE1B372B6D17BD00463130 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE1B4D2B6D184E00463130 /* ViewModel */,
+				F3CE1B382B6D17C700463130 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F3CE1B382B6D17C700463130 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE1B3A2B6D17D000463130 /* AnnouncementView.swift */,
+				F3CE1B3C2B6D17D000463130 /* GitHubView.swift */,
+				F3CE1B412B6D17D000463130 /* HomeNavigationBarView.swift */,
+				F3CE1B3E2B6D17D000463130 /* HomeView.swift */,
+				F3CE1B392B6D17D000463130 /* MainCalendarView.swift */,
+				F3CE1B3F2B6D17D000463130 /* MascotView.swift */,
+				F3CE1B422B6D17D000463130 /* RankView.swift */,
+				F3CE1B3D2B6D17D000463130 /* TodayILearnedView.swift */,
+				F3CE1B402B6D17D000463130 /* ToDoListView.swift */,
+				F3CE1B3B2B6D17D000463130 /* UserInformationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3CE1B4D2B6D184E00463130 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE1B4E2B6D185900463130 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -421,6 +489,9 @@
 			dependencies = (
 			);
 			name = "UMC-iOS";
+			packageProductDependencies = (
+				F3CE1B572B6D1B1A00463130 /* PopupView */,
+			);
 			productName = "UMC-iOS";
 			productReference = F332F0152B4C599000F0CDD0 /* UMC-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -493,6 +564,9 @@
 				Base,
 			);
 			mainGroup = F332F00C2B4C599000F0CDD0;
+			packageReferences = (
+				F3CE1B562B6D1B1A00463130 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = F332F0162B4C599000F0CDD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -536,14 +610,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F332F05C2B4C5AC200F0CDD0 /* MemberResponseDTO.swift in Sources */,
+				F3CE1B472B6D17D000463130 /* TodayILearnedView.swift in Sources */,
 				F3CE1AC82B6D0D7000463130 /* JoinNavigationButton.swift in Sources */,
 				F3CE1A7A2B6CEFCF00463130 /* SocialButtonSet.swift in Sources */,
 				F3CE1AC02B6D0D7000463130 /* JoinCode.swift in Sources */,
+				F3CE1B482B6D17D000463130 /* HomeView.swift in Sources */,
 				F332F04D2B4C5A4000F0CDD0 /* ContentViewModel.swift in Sources */,
 				F3CE1ABD2B6D0D7000463130 /* SelectUniv.swift in Sources */,
+				F3CE1B532B6D189000463130 /* AnnouncementInfo.swift in Sources */,
 				F3CE1AC32B6D0D7000463130 /* SelectPosition.swift in Sources */,
 				F3CE1AAB2B6D0D5B00463130 /* LoginView.swift in Sources */,
 				F332F0552B4C5A7D00F0CDD0 /* Member.swift in Sources */,
+				F3CE1B462B6D17D000463130 /* GitHubView.swift in Sources */,
+				F3CE1B542B6D189000463130 /* CalendarTask.swift in Sources */,
 				F3CE1ABE2B6D0D7000463130 /* JoinAgreement.swift in Sources */,
 				F332F01B2B4C599000F0CDD0 /* ContentView.swift in Sources */,
 				F3CE1AC52B6D0D7000463130 /* JoinViewModel.swift in Sources */,
@@ -554,14 +633,23 @@
 				F332F04A2B4C5A2E00F0CDD0 /* DummyUtilView.swift in Sources */,
 				F3CE1ACA2B6D0D7000463130 /* JoinTextFieldStyle.swift in Sources */,
 				F3CE1AC42B6D0D7000463130 /* JoinNickname.swift in Sources */,
+				F3CE1B492B6D17D000463130 /* MascotView.swift in Sources */,
 				F3CE1ABF2B6D0D7000463130 /* SelectGeneration.swift in Sources */,
 				F3CE1AC12B6D0D7000463130 /* JoinName.swift in Sources */,
 				F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */,
+				F3CE1B4C2B6D17D000463130 /* RankView.swift in Sources */,
 				F3CE1A822B6CF29700463130 /* UserProfileEdit.swift in Sources */,
 				F332F05A2B4C5AB600F0CDD0 /* MemberRequestDTO.swift in Sources */,
 				F332F0622B4C5AF800F0CDD0 /* DummyResponseRepository.swift in Sources */,
+				F3CE1B442B6D17D000463130 /* AnnouncementView.swift in Sources */,
+				F3CE1B552B6D189000463130 /* DateValue.swift in Sources */,
+				F3CE1B4A2B6D17D000463130 /* ToDoListView.swift in Sources */,
 				F3CE1AC62B6D0D7000463130 /* JoinAgreCircleCheckButton.swift in Sources */,
 				F3CE1AC22B6D0D7000463130 /* SelectParts.swift in Sources */,
+				F3CE1B4F2B6D185900463130 /* HomeViewModel.swift in Sources */,
+				F3CE1B452B6D17D000463130 /* UserInformationView.swift in Sources */,
+				F3CE1B4B2B6D17D000463130 /* HomeNavigationBarView.swift in Sources */,
+				F3CE1B432B6D17D000463130 /* MainCalendarView.swift in Sources */,
 				F3CE1A842B6CF2D900463130 /* UserProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -886,6 +974,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3CE1B562B6D1B1A00463130 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3CE1B572B6D1B1A00463130 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3CE1B562B6D1B1A00463130 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F332F00D2B4C599000F0CDD0 /* Project object */;
 }
