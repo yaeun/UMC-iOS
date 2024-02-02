@@ -55,6 +55,21 @@
 		F3CE1B542B6D189000463130 /* CalendarTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B512B6D189000463130 /* CalendarTask.swift */; };
 		F3CE1B552B6D189000463130 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B522B6D189000463130 /* DateValue.swift */; };
 		F3CE1B582B6D1B1A00463130 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = F3CE1B572B6D1B1A00463130 /* PopupView */; };
+		F3CE1B6E2B6D206300463130 /* HistorySearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B5D2B6D206300463130 /* HistorySearchBarView.swift */; };
+		F3CE1B6F2B6D206300463130 /* ProjectTypeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B5E2B6D206300463130 /* ProjectTypeButtonView.swift */; };
+		F3CE1B702B6D206300463130 /* HistoryProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B5F2B6D206300463130 /* HistoryProjectView.swift */; };
+		F3CE1B712B6D206300463130 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B602B6D206300463130 /* HistoryView.swift */; };
+		F3CE1B722B6D206300463130 /* HistoryProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B612B6D206300463130 /* HistoryProjectListView.swift */; };
+		F3CE1B732B6D206300463130 /* HotProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B622B6D206300463130 /* HotProjectView.swift */; };
+		F3CE1B742B6D206300463130 /* HistorySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B642B6D206300463130 /* HistorySearchView.swift */; };
+		F3CE1B752B6D206300463130 /* HistoryRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B662B6D206300463130 /* HistoryRegisterView.swift */; };
+		F3CE1B762B6D206300463130 /* HistoryRegisterNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B672B6D206300463130 /* HistoryRegisterNavigationBarView.swift */; };
+		F3CE1B772B6D206300463130 /* ProjectIconRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B682B6D206300463130 /* ProjectIconRegisterView.swift */; };
+		F3CE1B782B6D206300463130 /* ProjectClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B692B6D206300463130 /* ProjectClassificationView.swift */; };
+		F3CE1B792B6D206300463130 /* ProjectHashtagRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B6A2B6D206300463130 /* ProjectHashtagRegisterView.swift */; };
+		F3CE1B7A2B6D206300463130 /* ProjectCardinalNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B6B2B6D206300463130 /* ProjectCardinalNumberView.swift */; };
+		F3CE1B7B2B6D206300463130 /* ProjectInformationRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B6C2B6D206300463130 /* ProjectInformationRegisterView.swift */; };
+		F3CE1B7C2B6D206300463130 /* ProjectNameRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1B6D2B6D206300463130 /* ProjectNameRegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +140,21 @@
 		F3CE1B502B6D189000463130 /* AnnouncementInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementInfo.swift; sourceTree = "<group>"; };
 		F3CE1B512B6D189000463130 /* CalendarTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTask.swift; sourceTree = "<group>"; };
 		F3CE1B522B6D189000463130 /* DateValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		F3CE1B5D2B6D206300463130 /* HistorySearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySearchBarView.swift; sourceTree = "<group>"; };
+		F3CE1B5E2B6D206300463130 /* ProjectTypeButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTypeButtonView.swift; sourceTree = "<group>"; };
+		F3CE1B5F2B6D206300463130 /* HistoryProjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryProjectView.swift; sourceTree = "<group>"; };
+		F3CE1B602B6D206300463130 /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		F3CE1B612B6D206300463130 /* HistoryProjectListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryProjectListView.swift; sourceTree = "<group>"; };
+		F3CE1B622B6D206300463130 /* HotProjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotProjectView.swift; sourceTree = "<group>"; };
+		F3CE1B642B6D206300463130 /* HistorySearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorySearchView.swift; sourceTree = "<group>"; };
+		F3CE1B662B6D206300463130 /* HistoryRegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryRegisterView.swift; sourceTree = "<group>"; };
+		F3CE1B672B6D206300463130 /* HistoryRegisterNavigationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryRegisterNavigationBarView.swift; sourceTree = "<group>"; };
+		F3CE1B682B6D206300463130 /* ProjectIconRegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectIconRegisterView.swift; sourceTree = "<group>"; };
+		F3CE1B692B6D206300463130 /* ProjectClassificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectClassificationView.swift; sourceTree = "<group>"; };
+		F3CE1B6A2B6D206300463130 /* ProjectHashtagRegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectHashtagRegisterView.swift; sourceTree = "<group>"; };
+		F3CE1B6B2B6D206300463130 /* ProjectCardinalNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCardinalNumberView.swift; sourceTree = "<group>"; };
+		F3CE1B6C2B6D206300463130 /* ProjectInformationRegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectInformationRegisterView.swift; sourceTree = "<group>"; };
+		F3CE1B6D2B6D206300463130 /* ProjectNameRegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectNameRegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +260,7 @@
 		F332F0442B4C59E000F0CDD0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F3CE1B5B2B6D206300463130 /* History */,
 				F3CE1B372B6D17BD00463130 /* Home */,
 				F3CE1AA72B6D0D4E00463130 /* Login */,
 				F3CE1A7B2B6CF0BD00463130 /* UserProfileView */,
@@ -473,6 +504,52 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F3CE1B5B2B6D206300463130 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE1B5C2B6D206300463130 /* HistoryMain */,
+				F3CE1B632B6D206300463130 /* HistorySearch */,
+				F3CE1B652B6D206300463130 /* HistoryRegister */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		F3CE1B5C2B6D206300463130 /* HistoryMain */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE1B5D2B6D206300463130 /* HistorySearchBarView.swift */,
+				F3CE1B5E2B6D206300463130 /* ProjectTypeButtonView.swift */,
+				F3CE1B5F2B6D206300463130 /* HistoryProjectView.swift */,
+				F3CE1B602B6D206300463130 /* HistoryView.swift */,
+				F3CE1B612B6D206300463130 /* HistoryProjectListView.swift */,
+				F3CE1B622B6D206300463130 /* HotProjectView.swift */,
+			);
+			path = HistoryMain;
+			sourceTree = "<group>";
+		};
+		F3CE1B632B6D206300463130 /* HistorySearch */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE1B642B6D206300463130 /* HistorySearchView.swift */,
+			);
+			path = HistorySearch;
+			sourceTree = "<group>";
+		};
+		F3CE1B652B6D206300463130 /* HistoryRegister */ = {
+			isa = PBXGroup;
+			children = (
+				F3CE1B662B6D206300463130 /* HistoryRegisterView.swift */,
+				F3CE1B672B6D206300463130 /* HistoryRegisterNavigationBarView.swift */,
+				F3CE1B682B6D206300463130 /* ProjectIconRegisterView.swift */,
+				F3CE1B692B6D206300463130 /* ProjectClassificationView.swift */,
+				F3CE1B6A2B6D206300463130 /* ProjectHashtagRegisterView.swift */,
+				F3CE1B6B2B6D206300463130 /* ProjectCardinalNumberView.swift */,
+				F3CE1B6C2B6D206300463130 /* ProjectInformationRegisterView.swift */,
+				F3CE1B6D2B6D206300463130 /* ProjectNameRegisterView.swift */,
+			);
+			path = HistoryRegister;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -613,6 +690,7 @@
 				F3CE1B472B6D17D000463130 /* TodayILearnedView.swift in Sources */,
 				F3CE1AC82B6D0D7000463130 /* JoinNavigationButton.swift in Sources */,
 				F3CE1A7A2B6CEFCF00463130 /* SocialButtonSet.swift in Sources */,
+				F3CE1B782B6D206300463130 /* ProjectClassificationView.swift in Sources */,
 				F3CE1AC02B6D0D7000463130 /* JoinCode.swift in Sources */,
 				F3CE1B482B6D17D000463130 /* HomeView.swift in Sources */,
 				F332F04D2B4C5A4000F0CDD0 /* ContentViewModel.swift in Sources */,
@@ -627,30 +705,44 @@
 				F332F01B2B4C599000F0CDD0 /* ContentView.swift in Sources */,
 				F3CE1AC52B6D0D7000463130 /* JoinViewModel.swift in Sources */,
 				F3CE1AC92B6D0D7000463130 /* JoinCircleBorderButton.swift in Sources */,
+				F3CE1B762B6D206300463130 /* HistoryRegisterNavigationBarView.swift in Sources */,
 				F332F0502B4C5A5800F0CDD0 /* Extension+View.swift in Sources */,
 				F332F05E2B4C5AD000F0CDD0 /* APiEndpoints.swift in Sources */,
+				F3CE1B752B6D206300463130 /* HistoryRegisterView.swift in Sources */,
+				F3CE1B722B6D206300463130 /* HistoryProjectListView.swift in Sources */,
+				F3CE1B792B6D206300463130 /* ProjectHashtagRegisterView.swift in Sources */,
+				F3CE1B702B6D206300463130 /* HistoryProjectView.swift in Sources */,
+				F3CE1B772B6D206300463130 /* ProjectIconRegisterView.swift in Sources */,
 				F3CE1AC72B6D0D7000463130 /* DropDownPicker.swift in Sources */,
 				F332F04A2B4C5A2E00F0CDD0 /* DummyUtilView.swift in Sources */,
 				F3CE1ACA2B6D0D7000463130 /* JoinTextFieldStyle.swift in Sources */,
 				F3CE1AC42B6D0D7000463130 /* JoinNickname.swift in Sources */,
 				F3CE1B492B6D17D000463130 /* MascotView.swift in Sources */,
 				F3CE1ABF2B6D0D7000463130 /* SelectGeneration.swift in Sources */,
+				F3CE1B732B6D206300463130 /* HotProjectView.swift in Sources */,
 				F3CE1AC12B6D0D7000463130 /* JoinName.swift in Sources */,
 				F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */,
+				F3CE1B712B6D206300463130 /* HistoryView.swift in Sources */,
 				F3CE1B4C2B6D17D000463130 /* RankView.swift in Sources */,
 				F3CE1A822B6CF29700463130 /* UserProfileEdit.swift in Sources */,
 				F332F05A2B4C5AB600F0CDD0 /* MemberRequestDTO.swift in Sources */,
 				F332F0622B4C5AF800F0CDD0 /* DummyResponseRepository.swift in Sources */,
 				F3CE1B442B6D17D000463130 /* AnnouncementView.swift in Sources */,
 				F3CE1B552B6D189000463130 /* DateValue.swift in Sources */,
+				F3CE1B6E2B6D206300463130 /* HistorySearchBarView.swift in Sources */,
+				F3CE1B742B6D206300463130 /* HistorySearchView.swift in Sources */,
 				F3CE1B4A2B6D17D000463130 /* ToDoListView.swift in Sources */,
 				F3CE1AC62B6D0D7000463130 /* JoinAgreCircleCheckButton.swift in Sources */,
+				F3CE1B7A2B6D206300463130 /* ProjectCardinalNumberView.swift in Sources */,
 				F3CE1AC22B6D0D7000463130 /* SelectParts.swift in Sources */,
+				F3CE1B6F2B6D206300463130 /* ProjectTypeButtonView.swift in Sources */,
 				F3CE1B4F2B6D185900463130 /* HomeViewModel.swift in Sources */,
 				F3CE1B452B6D17D000463130 /* UserInformationView.swift in Sources */,
+				F3CE1B7B2B6D206300463130 /* ProjectInformationRegisterView.swift in Sources */,
 				F3CE1B4B2B6D17D000463130 /* HomeNavigationBarView.swift in Sources */,
 				F3CE1B432B6D17D000463130 /* MainCalendarView.swift in Sources */,
 				F3CE1A842B6CF2D900463130 /* UserProfileView.swift in Sources */,
+				F3CE1B7C2B6D206300463130 /* ProjectNameRegisterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
