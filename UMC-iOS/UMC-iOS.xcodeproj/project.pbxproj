@@ -35,6 +35,11 @@
 		F391AD9C2B6E3D07006ECF1D /* WritingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD972B6E3D07006ECF1D /* WritingListCell.swift */; };
 		F391AD9D2B6E3D07006ECF1D /* WritingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD982B6E3D07006ECF1D /* WritingList.swift */; };
 		F391AD9E2B6E3D07006ECF1D /* WritingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD992B6E3D07006ECF1D /* WritingButton.swift */; };
+		F391ADA92B6E40E8006ECF1D /* BulletinBoardContentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391ADA82B6E40E8006ECF1D /* BulletinBoardContentDetail.swift */; };
+		F391ADAB2B6E4100006ECF1D /* BulletinBoardContentDetailUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391ADAA2B6E4100006ECF1D /* BulletinBoardContentDetailUI.swift */; };
+		F391ADAD2B6E4111006ECF1D /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391ADAC2B6E4111006ECF1D /* Comment.swift */; };
+		F391ADAF2B6E4120006ECF1D /* CommetAddbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391ADAE2B6E4120006ECF1D /* CommetAddbar.swift */; };
+		F391ADB12B6E4138006ECF1D /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391ADB02B6E4138006ECF1D /* DetailButton.swift */; };
 		F3CE1A7A2B6CEFCF00463130 /* SocialButtonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1A792B6CEFCF00463130 /* SocialButtonSet.swift */; };
 		F3CE1A822B6CF29700463130 /* UserProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1A812B6CF29700463130 /* UserProfileEdit.swift */; };
 		F3CE1A842B6CF2D900463130 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1A832B6CF2D900463130 /* UserProfileView.swift */; };
@@ -145,6 +150,11 @@
 		F391AD972B6E3D07006ECF1D /* WritingListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingListCell.swift; sourceTree = "<group>"; };
 		F391AD982B6E3D07006ECF1D /* WritingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingList.swift; sourceTree = "<group>"; };
 		F391AD992B6E3D07006ECF1D /* WritingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingButton.swift; sourceTree = "<group>"; };
+		F391ADA82B6E40E8006ECF1D /* BulletinBoardContentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinBoardContentDetail.swift; sourceTree = "<group>"; };
+		F391ADAA2B6E4100006ECF1D /* BulletinBoardContentDetailUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinBoardContentDetailUI.swift; sourceTree = "<group>"; };
+		F391ADAC2B6E4111006ECF1D /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		F391ADAE2B6E4120006ECF1D /* CommetAddbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommetAddbar.swift; sourceTree = "<group>"; };
+		F391ADB02B6E4138006ECF1D /* DetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
 		F3CE1A792B6CEFCF00463130 /* SocialButtonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButtonSet.swift; sourceTree = "<group>"; };
 		F3CE1A812B6CF29700463130 /* UserProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileEdit.swift; sourceTree = "<group>"; };
 		F3CE1A832B6CF2D900463130 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
@@ -308,6 +318,7 @@
 		F332F0442B4C59E000F0CDD0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F391ADA52B6E4035006ECF1D /* ContentDetail */,
 				F391AD942B6E3C72006ECF1D /* WritingView */,
 				F3CE1BCA2B6D3E6500463130 /* TodoList */,
 				F3CE1BAE2B6D391100463130 /* HomeManager */,
@@ -464,6 +475,26 @@
 				F391AD952B6E3D07006ECF1D /* WritingListCellFirst.swift */,
 			);
 			path = WritingView;
+			sourceTree = "<group>";
+		};
+		F391ADA52B6E4035006ECF1D /* ContentDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F391ADA62B6E404F006ECF1D /* View */,
+			);
+			path = ContentDetail;
+			sourceTree = "<group>";
+		};
+		F391ADA62B6E404F006ECF1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F391ADA82B6E40E8006ECF1D /* BulletinBoardContentDetail.swift */,
+				F391ADAA2B6E4100006ECF1D /* BulletinBoardContentDetailUI.swift */,
+				F391ADAC2B6E4111006ECF1D /* Comment.swift */,
+				F391ADAE2B6E4120006ECF1D /* CommetAddbar.swift */,
+				F391ADB02B6E4138006ECF1D /* DetailButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F3CE1A762B6CEF4D00463130 /* UserProfileEditView */ = {
@@ -838,9 +869,11 @@
 				F3CE1B532B6D189000463130 /* AnnouncementInfo.swift in Sources */,
 				F3CE1AC32B6D0D7000463130 /* SelectPosition.swift in Sources */,
 				F3CE1AAB2B6D0D5B00463130 /* LoginView.swift in Sources */,
+				F391ADB12B6E4138006ECF1D /* DetailButton.swift in Sources */,
 				F391AD9C2B6E3D07006ECF1D /* WritingListCell.swift in Sources */,
 				F332F0552B4C5A7D00F0CDD0 /* Member.swift in Sources */,
 				F3CE1B462B6D17D000463130 /* GitHubView.swift in Sources */,
+				F391ADAF2B6E4120006ECF1D /* CommetAddbar.swift in Sources */,
 				F3CE1BBF2B6D394C00463130 /* ManagerPinButton.swift in Sources */,
 				F3CE1BC62B6D395C00463130 /* CircleCheckButton.swift in Sources */,
 				F3CE1B542B6D189000463130 /* CalendarTask.swift in Sources */,
@@ -853,8 +886,10 @@
 				F3CE1AC52B6D0D7000463130 /* JoinViewModel.swift in Sources */,
 				F3CE1AC92B6D0D7000463130 /* JoinCircleBorderButton.swift in Sources */,
 				F3CE1B762B6D206300463130 /* HistoryRegisterNavigationBarView.swift in Sources */,
+				F391ADAD2B6E4111006ECF1D /* Comment.swift in Sources */,
 				F332F0502B4C5A5800F0CDD0 /* Extension+View.swift in Sources */,
 				F3CE1BC92B6D395C00463130 /* CircleFillButton.swift in Sources */,
+				F391ADAB2B6E4100006ECF1D /* BulletinBoardContentDetailUI.swift in Sources */,
 				F332F05E2B4C5AD000F0CDD0 /* APiEndpoints.swift in Sources */,
 				F3CE1B752B6D206300463130 /* HistoryRegisterView.swift in Sources */,
 				F3CE1B722B6D206300463130 /* HistoryProjectListView.swift in Sources */,
@@ -892,6 +927,7 @@
 				F3CE1B6F2B6D206300463130 /* ProjectTypeButtonView.swift in Sources */,
 				F3CE1B4F2B6D185900463130 /* HomeViewModel.swift in Sources */,
 				F3CE1B452B6D17D000463130 /* UserInformationView.swift in Sources */,
+				F391ADA92B6E40E8006ECF1D /* BulletinBoardContentDetail.swift in Sources */,
 				F3CE1BC82B6D395C00463130 /* SettingBackButton.swift in Sources */,
 				F3CE1B7B2B6D206300463130 /* ProjectInformationRegisterView.swift in Sources */,
 				F3CE1B4B2B6D17D000463130 /* HomeNavigationBarView.swift in Sources */,
