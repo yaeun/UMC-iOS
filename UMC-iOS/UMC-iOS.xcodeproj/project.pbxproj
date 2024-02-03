@@ -30,6 +30,11 @@
 		F391AD8F2B6E2FD5006ECF1D /* ToDoListAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD872B6E2FD5006ECF1D /* ToDoListAdd.swift */; };
 		F391AD902B6E2FD5006ECF1D /* ToDoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD882B6E2FD5006ECF1D /* ToDoListCell.swift */; };
 		F391AD912B6E2FD5006ECF1D /* ToDoEditFirstActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD892B6E2FD5006ECF1D /* ToDoEditFirstActionSheet.swift */; };
+		F391AD9A2B6E3D07006ECF1D /* WritingListCellFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD952B6E3D07006ECF1D /* WritingListCellFirst.swift */; };
+		F391AD9B2B6E3D07006ECF1D /* ButtonWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD962B6E3D07006ECF1D /* ButtonWithIcon.swift */; };
+		F391AD9C2B6E3D07006ECF1D /* WritingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD972B6E3D07006ECF1D /* WritingListCell.swift */; };
+		F391AD9D2B6E3D07006ECF1D /* WritingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD982B6E3D07006ECF1D /* WritingList.swift */; };
+		F391AD9E2B6E3D07006ECF1D /* WritingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F391AD992B6E3D07006ECF1D /* WritingButton.swift */; };
 		F3CE1A7A2B6CEFCF00463130 /* SocialButtonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1A792B6CEFCF00463130 /* SocialButtonSet.swift */; };
 		F3CE1A822B6CF29700463130 /* UserProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1A812B6CF29700463130 /* UserProfileEdit.swift */; };
 		F3CE1A842B6CF2D900463130 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE1A832B6CF2D900463130 /* UserProfileView.swift */; };
@@ -135,6 +140,11 @@
 		F391AD872B6E2FD5006ECF1D /* ToDoListAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListAdd.swift; sourceTree = "<group>"; };
 		F391AD882B6E2FD5006ECF1D /* ToDoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListCell.swift; sourceTree = "<group>"; };
 		F391AD892B6E2FD5006ECF1D /* ToDoEditFirstActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoEditFirstActionSheet.swift; sourceTree = "<group>"; };
+		F391AD952B6E3D07006ECF1D /* WritingListCellFirst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingListCellFirst.swift; sourceTree = "<group>"; };
+		F391AD962B6E3D07006ECF1D /* ButtonWithIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithIcon.swift; sourceTree = "<group>"; };
+		F391AD972B6E3D07006ECF1D /* WritingListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingListCell.swift; sourceTree = "<group>"; };
+		F391AD982B6E3D07006ECF1D /* WritingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingList.swift; sourceTree = "<group>"; };
+		F391AD992B6E3D07006ECF1D /* WritingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingButton.swift; sourceTree = "<group>"; };
 		F3CE1A792B6CEFCF00463130 /* SocialButtonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButtonSet.swift; sourceTree = "<group>"; };
 		F3CE1A812B6CF29700463130 /* UserProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileEdit.swift; sourceTree = "<group>"; };
 		F3CE1A832B6CF2D900463130 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
@@ -298,6 +308,7 @@
 		F332F0442B4C59E000F0CDD0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F391AD942B6E3C72006ECF1D /* WritingView */,
 				F3CE1BCA2B6D3E6500463130 /* TodoList */,
 				F3CE1BAE2B6D391100463130 /* HomeManager */,
 				F3CE1B5B2B6D206300463130 /* History */,
@@ -441,6 +452,18 @@
 			children = (
 			);
 			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		F391AD942B6E3C72006ECF1D /* WritingView */ = {
+			isa = PBXGroup;
+			children = (
+				F391AD962B6E3D07006ECF1D /* ButtonWithIcon.swift */,
+				F391AD992B6E3D07006ECF1D /* WritingButton.swift */,
+				F391AD982B6E3D07006ECF1D /* WritingList.swift */,
+				F391AD972B6E3D07006ECF1D /* WritingListCell.swift */,
+				F391AD952B6E3D07006ECF1D /* WritingListCellFirst.swift */,
+			);
+			path = WritingView;
 			sourceTree = "<group>";
 		};
 		F3CE1A762B6CEF4D00463130 /* UserProfileEditView */ = {
@@ -805,14 +828,17 @@
 				F3CE1AC82B6D0D7000463130 /* JoinNavigationButton.swift in Sources */,
 				F3CE1A7A2B6CEFCF00463130 /* SocialButtonSet.swift in Sources */,
 				F3CE1B782B6D206300463130 /* ProjectClassificationView.swift in Sources */,
+				F391AD9E2B6E3D07006ECF1D /* WritingButton.swift in Sources */,
 				F3CE1AC02B6D0D7000463130 /* JoinCode.swift in Sources */,
 				F3CE1B482B6D17D000463130 /* HomeView.swift in Sources */,
 				F3CE1BBA2B6D393B00463130 /* GenerationPartViewModel.swift in Sources */,
 				F332F04D2B4C5A4000F0CDD0 /* ContentViewModel.swift in Sources */,
+				F391AD9A2B6E3D07006ECF1D /* WritingListCellFirst.swift in Sources */,
 				F3CE1ABD2B6D0D7000463130 /* SelectUniv.swift in Sources */,
 				F3CE1B532B6D189000463130 /* AnnouncementInfo.swift in Sources */,
 				F3CE1AC32B6D0D7000463130 /* SelectPosition.swift in Sources */,
 				F3CE1AAB2B6D0D5B00463130 /* LoginView.swift in Sources */,
+				F391AD9C2B6E3D07006ECF1D /* WritingListCell.swift in Sources */,
 				F332F0552B4C5A7D00F0CDD0 /* Member.swift in Sources */,
 				F3CE1B462B6D17D000463130 /* GitHubView.swift in Sources */,
 				F3CE1BBF2B6D394C00463130 /* ManagerPinButton.swift in Sources */,
@@ -841,6 +867,7 @@
 				F3CE1B492B6D17D000463130 /* MascotView.swift in Sources */,
 				F391AD8F2B6E2FD5006ECF1D /* ToDoListAdd.swift in Sources */,
 				F3CE1ABF2B6D0D7000463130 /* SelectGeneration.swift in Sources */,
+				F391AD9D2B6E3D07006ECF1D /* WritingList.swift in Sources */,
 				F3CE1B732B6D206300463130 /* HotProjectView.swift in Sources */,
 				F3CE1AC12B6D0D7000463130 /* JoinName.swift in Sources */,
 				F332F0192B4C599000F0CDD0 /* UMC_iOSApp.swift in Sources */,
@@ -870,6 +897,7 @@
 				F3CE1B4B2B6D17D000463130 /* HomeNavigationBarView.swift in Sources */,
 				F391AD902B6E2FD5006ECF1D /* ToDoListCell.swift in Sources */,
 				F391AD8C2B6E2FD5006ECF1D /* ToDoEditSecondActionSheet.swift in Sources */,
+				F391AD9B2B6E3D07006ECF1D /* ButtonWithIcon.swift in Sources */,
 				F391AD8A2B6E2FD5006ECF1D /* ToDoEditSheet.swift in Sources */,
 				F3CE1B432B6D17D000463130 /* MainCalendarView.swift in Sources */,
 				F3CE1A842B6CF2D900463130 /* UserProfileView.swift in Sources */,
